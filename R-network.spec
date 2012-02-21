@@ -1,10 +1,10 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  network
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          1.7
-Release:          1
+Release:          2
 Summary:          Classes for Relational Data
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
