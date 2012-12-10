@@ -1,4 +1,4 @@
-%bcond_with bootstrap
+%bcond_without bootstrap
 %global packname  network
 %global rlibdir  %{_libdir}/R/library
 
@@ -53,3 +53,15 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/network.api
+
+
+%changelog
+* Wed Feb 22 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.7-2
++ Revision: 778815
+- Rebuild with proper dependencies
+
+* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.7-1
++ Revision: 776946
+- Import R-network
+- Import R-network
+
