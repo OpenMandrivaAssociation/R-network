@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.7
-Release:          2
+Version:          1.7.1.1
+Release:          1
 Summary:          Classes for Relational Data
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/network_1.7-1.1.tar.gz
 Requires:         R-utils 
 %if %{without bootstrap}
 Requires:         R-sna R-statnet 
@@ -53,15 +53,3 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/network.api
-
-
-%changelog
-* Wed Feb 22 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.7-2
-+ Revision: 778815
-- Rebuild with proper dependencies
-
-* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.7-1
-+ Revision: 776946
-- Import R-network
-- Import R-network
-
