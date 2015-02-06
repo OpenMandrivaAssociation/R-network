@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          1.7.2
-Release:          1
+Release:          2
 Summary:          Classes for Relational Data
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
